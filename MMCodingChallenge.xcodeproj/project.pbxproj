@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CB37DFD2742B6AC00CC6BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37DFC2742B6AC00CC6BD9 /* AppDelegate.swift */; };
+		6CB37DFF2742B6AC00CC6BD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37DFE2742B6AC00CC6BD9 /* SceneDelegate.swift */; };
+		6CB37E012742B6AC00CC6BD9 /* CountryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E002742B6AC00CC6BD9 /* CountryListVC.swift */; };
+		6CB37E042742B6AC00CC6BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB37E022742B6AC00CC6BD9 /* Main.storyboard */; };
+		6CB37E072742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E052742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld */; };
+		6CB37E092742B6AE00CC6BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB37E082742B6AE00CC6BD9 /* Assets.xcassets */; };
+		6CB37E0C2742B6AE00CC6BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB37E0A2742B6AE00CC6BD9 /* LaunchScreen.storyboard */; };
+		6CB37E172742B6AE00CC6BD9 /* MMCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E162742B6AE00CC6BD9 /* MMCodingChallengeTests.swift */; };
+		6CB37E212742B6AE00CC6BD9 /* MMCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E202742B6AE00CC6BD9 /* MMCodingChallengeUITests.swift */; };
+		6CB37E232742B6AE00CC6BD9 /* MMCodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E222742B6AE00CC6BD9 /* MMCodingChallengeUITestsLaunchTests.swift */; };
+		6CB37E3527433EB500CC6BD9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E3427433EB500CC6BD9 /* APIManager.swift */; };
+		C41A55AC1FD300BB31F231DE /* libPods-MMCodingChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17098542CEA5782A1DD39A1B /* libPods-MMCodingChallengeUITests.a */; };
+		DE10E8E62EDDEDA04FF29B96 /* libPods-MMCodingChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E677071D0D33B8DB87ABAD /* libPods-MMCodingChallengeTests.a */; };
+		E706B0544AB35CCBE21F335F /* libPods-MMCodingChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A899B9102D09F819311DDFA /* libPods-MMCodingChallenge.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CB37E132742B6AE00CC6BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB37DF12742B6AC00CC6BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB37DF82742B6AC00CC6BD9;
+			remoteInfo = MMCodingChallenge;
+		};
+		6CB37E1D2742B6AE00CC6BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB37DF12742B6AC00CC6BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB37DF82742B6AC00CC6BD9;
+			remoteInfo = MMCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E0D2C31EFA90D1C08947D4A /* Pods-MMCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-MMCodingChallenge/Pods-MMCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		17098542CEA5782A1DD39A1B /* libPods-MMCodingChallengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMCodingChallengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF3366614B08735272095BF /* Pods-MMCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MMCodingChallengeTests/Pods-MMCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2130D0D41C2DFDA857A7CDC1 /* Pods-MMCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-MMCodingChallengeUITests/Pods-MMCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A899B9102D09F819311DDFA /* libPods-MMCodingChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMCodingChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB37DF92742B6AC00CC6BD9 /* MMCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB37DFC2742B6AC00CC6BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CB37DFE2742B6AC00CC6BD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CB37E002742B6AC00CC6BD9 /* CountryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListVC.swift; sourceTree = "<group>"; };
+		6CB37E032742B6AC00CC6BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CB37E062742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MMCodingChallenge.xcdatamodel; sourceTree = "<group>"; };
+		6CB37E082742B6AE00CC6BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CB37E0B2742B6AE00CC6BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CB37E0D2742B6AE00CC6BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB37E122742B6AE00CC6BD9 /* MMCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB37E162742B6AE00CC6BD9 /* MMCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCodingChallengeTests.swift; sourceTree = "<group>"; };
+		6CB37E1C2742B6AE00CC6BD9 /* MMCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB37E202742B6AE00CC6BD9 /* MMCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		6CB37E222742B6AE00CC6BD9 /* MMCodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CB37E3427433EB500CC6BD9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A97C420B1B602174B5526750 /* Pods-MMCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MMCodingChallenge/Pods-MMCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E677071D0D33B8DB87ABAD /* libPods-MMCodingChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMCodingChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E308F55F38D0CD003C912317 /* Pods-MMCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-MMCodingChallengeUITests/Pods-MMCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E567575B8E495A1B9BC5AEB9 /* Pods-MMCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MMCodingChallengeTests/Pods-MMCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CB37DF62742B6AC00CC6BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E706B0544AB35CCBE21F335F /* libPods-MMCodingChallenge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E0F2742B6AE00CC6BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE10E8E62EDDEDA04FF29B96 /* libPods-MMCodingChallengeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E192742B6AE00CC6BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41A55AC1FD300BB31F231DE /* libPods-MMCodingChallengeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40197B3181EAE6C7ECBFCF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A899B9102D09F819311DDFA /* libPods-MMCodingChallenge.a */,
+				D5E677071D0D33B8DB87ABAD /* libPods-MMCodingChallengeTests.a */,
+				17098542CEA5782A1DD39A1B /* libPods-MMCodingChallengeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CB37DF02742B6AC00CC6BD9 = {
+			isa = PBXGroup;
+			children = (
+				6CB37DFB2742B6AC00CC6BD9 /* MMCodingChallenge */,
+				6CB37E152742B6AE00CC6BD9 /* MMCodingChallengeTests */,
+				6CB37E1F2742B6AE00CC6BD9 /* MMCodingChallengeUITests */,
+				6CB37DFA2742B6AC00CC6BD9 /* Products */,
+				8EDEED6F54887E8088F7EC43 /* Pods */,
+				40197B3181EAE6C7ECBFCF46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CB37DFA2742B6AC00CC6BD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37DF92742B6AC00CC6BD9 /* MMCodingChallenge.app */,
+				6CB37E122742B6AE00CC6BD9 /* MMCodingChallengeTests.xctest */,
+				6CB37E1C2742B6AE00CC6BD9 /* MMCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CB37DFB2742B6AC00CC6BD9 /* MMCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E2F27433DC600CC6BD9 /* AppLaunchDelegates */,
+				6CB37E3327433DFA00CC6BD9 /* ViewControllers */,
+				6CB37E3027433DD500CC6BD9 /* Views */,
+				6CB37E082742B6AE00CC6BD9 /* Assets.xcassets */,
+				6CB37E0D2742B6AE00CC6BD9 /* Info.plist */,
+				6CB37E052742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld */,
+				6CB37E3627433EB900CC6BD9 /* Managers */,
+			);
+			path = MMCodingChallenge;
+			sourceTree = "<group>";
+		};
+		6CB37E152742B6AE00CC6BD9 /* MMCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E162742B6AE00CC6BD9 /* MMCodingChallengeTests.swift */,
+			);
+			path = MMCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		6CB37E1F2742B6AE00CC6BD9 /* MMCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E202742B6AE00CC6BD9 /* MMCodingChallengeUITests.swift */,
+				6CB37E222742B6AE00CC6BD9 /* MMCodingChallengeUITestsLaunchTests.swift */,
+			);
+			path = MMCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		6CB37E2F27433DC600CC6BD9 /* AppLaunchDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37DFC2742B6AC00CC6BD9 /* AppDelegate.swift */,
+				6CB37DFE2742B6AC00CC6BD9 /* SceneDelegate.swift */,
+			);
+			path = AppLaunchDelegates;
+			sourceTree = "<group>";
+		};
+		6CB37E3027433DD500CC6BD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E3127433DDC00CC6BD9 /* Storyboards */,
+				6CB37E3227433DE400CC6BD9 /* LaunchScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6CB37E3127433DDC00CC6BD9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E022742B6AC00CC6BD9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6CB37E3227433DE400CC6BD9 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E0A2742B6AE00CC6BD9 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		6CB37E3327433DFA00CC6BD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E002742B6AC00CC6BD9 /* CountryListVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6CB37E3627433EB900CC6BD9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E3427433EB500CC6BD9 /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8EDEED6F54887E8088F7EC43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97C420B1B602174B5526750 /* Pods-MMCodingChallenge.debug.xcconfig */,
+				0E0D2C31EFA90D1C08947D4A /* Pods-MMCodingChallenge.release.xcconfig */,
+				1DF3366614B08735272095BF /* Pods-MMCodingChallengeTests.debug.xcconfig */,
+				E567575B8E495A1B9BC5AEB9 /* Pods-MMCodingChallengeTests.release.xcconfig */,
+				2130D0D41C2DFDA857A7CDC1 /* Pods-MMCodingChallengeUITests.debug.xcconfig */,
+				E308F55F38D0CD003C912317 /* Pods-MMCodingChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CB37DF82742B6AC00CC6BD9 /* MMCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB37E262742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallenge" */;
+			buildPhases = (
+				9028D17209135C6AB36764EE /* [CP] Check Pods Manifest.lock */,
+				6CB37DF52742B6AC00CC6BD9 /* Sources */,
+				6CB37DF62742B6AC00CC6BD9 /* Frameworks */,
+				6CB37DF72742B6AC00CC6BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMCodingChallenge;
+			productName = MMCodingChallenge;
+			productReference = 6CB37DF92742B6AC00CC6BD9 /* MMCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CB37E112742B6AE00CC6BD9 /* MMCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB37E292742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallengeTests" */;
+			buildPhases = (
+				3AB9E499DD1358A51869EB23 /* [CP] Check Pods Manifest.lock */,
+				6CB37E0E2742B6AE00CC6BD9 /* Sources */,
+				6CB37E0F2742B6AE00CC6BD9 /* Frameworks */,
+				6CB37E102742B6AE00CC6BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB37E142742B6AE00CC6BD9 /* PBXTargetDependency */,
+			);
+			name = MMCodingChallengeTests;
+			productName = MMCodingChallengeTests;
+			productReference = 6CB37E122742B6AE00CC6BD9 /* MMCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CB37E1B2742B6AE00CC6BD9 /* MMCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB37E2C2742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallengeUITests" */;
+			buildPhases = (
+				96F28AF53704D13BC4CAFB7B /* [CP] Check Pods Manifest.lock */,
+				6CB37E182742B6AE00CC6BD9 /* Sources */,
+				6CB37E192742B6AE00CC6BD9 /* Frameworks */,
+				6CB37E1A2742B6AE00CC6BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB37E1E2742B6AE00CC6BD9 /* PBXTargetDependency */,
+			);
+			name = MMCodingChallengeUITests;
+			productName = MMCodingChallengeUITests;
+			productReference = 6CB37E1C2742B6AE00CC6BD9 /* MMCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CB37DF12742B6AC00CC6BD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6CB37DF82742B6AC00CC6BD9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6CB37E112742B6AE00CC6BD9 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6CB37DF82742B6AC00CC6BD9;
+					};
+					6CB37E1B2742B6AE00CC6BD9 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6CB37DF82742B6AC00CC6BD9;
+					};
+				};
+			};
+			buildConfigurationList = 6CB37DF42742B6AC00CC6BD9 /* Build configuration list for PBXProject "MMCodingChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CB37DF02742B6AC00CC6BD9;
+			productRefGroup = 6CB37DFA2742B6AC00CC6BD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CB37DF82742B6AC00CC6BD9 /* MMCodingChallenge */,
+				6CB37E112742B6AE00CC6BD9 /* MMCodingChallengeTests */,
+				6CB37E1B2742B6AE00CC6BD9 /* MMCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CB37DF72742B6AC00CC6BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB37E0C2742B6AE00CC6BD9 /* LaunchScreen.storyboard in Resources */,
+				6CB37E092742B6AE00CC6BD9 /* Assets.xcassets in Resources */,
+				6CB37E042742B6AC00CC6BD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E102742B6AE00CC6BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E1A2742B6AE00CC6BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB9E499DD1358A51869EB23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9028D17209135C6AB36764EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96F28AF53704D13BC4CAFB7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CB37DF52742B6AC00CC6BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB37E012742B6AC00CC6BD9 /* CountryListVC.swift in Sources */,
+				6CB37DFD2742B6AC00CC6BD9 /* AppDelegate.swift in Sources */,
+				6CB37E3527433EB500CC6BD9 /* APIManager.swift in Sources */,
+				6CB37DFF2742B6AC00CC6BD9 /* SceneDelegate.swift in Sources */,
+				6CB37E072742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E0E2742B6AE00CC6BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB37E172742B6AE00CC6BD9 /* MMCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB37E182742B6AE00CC6BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB37E232742B6AE00CC6BD9 /* MMCodingChallengeUITestsLaunchTests.swift in Sources */,
+				6CB37E212742B6AE00CC6BD9 /* MMCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CB37E142742B6AE00CC6BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB37DF82742B6AC00CC6BD9 /* MMCodingChallenge */;
+			targetProxy = 6CB37E132742B6AE00CC6BD9 /* PBXContainerItemProxy */;
+		};
+		6CB37E1E2742B6AE00CC6BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB37DF82742B6AC00CC6BD9 /* MMCodingChallenge */;
+			targetProxy = 6CB37E1D2742B6AE00CC6BD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CB37E022742B6AC00CC6BD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB37E032742B6AC00CC6BD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CB37E0A2742B6AE00CC6BD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB37E0B2742B6AE00CC6BD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CB37E242742B6AE00CC6BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CB37E252742B6AE00CC6BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CB37E272742B6AE00CC6BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97C420B1B602174B5526750 /* Pods-MMCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MMCodingChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CB37E282742B6AE00CC6BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0D2C31EFA90D1C08947D4A /* Pods-MMCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MMCodingChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CB37E2A2742B6AE00CC6BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF3366614B08735272095BF /* Pods-MMCodingChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMCodingChallenge.app/MMCodingChallenge";
+			};
+			name = Debug;
+		};
+		6CB37E2B2742B6AE00CC6BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E567575B8E495A1B9BC5AEB9 /* Pods-MMCodingChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMCodingChallenge.app/MMCodingChallenge";
+			};
+			name = Release;
+		};
+		6CB37E2D2742B6AE00CC6BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2130D0D41C2DFDA857A7CDC1 /* Pods-MMCodingChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MMCodingChallenge;
+			};
+			name = Debug;
+		};
+		6CB37E2E2742B6AE00CC6BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E308F55F38D0CD003C912317 /* Pods-MMCodingChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XUN95V9WDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kem.bel.MMCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MMCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CB37DF42742B6AC00CC6BD9 /* Build configuration list for PBXProject "MMCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB37E242742B6AE00CC6BD9 /* Debug */,
+				6CB37E252742B6AE00CC6BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB37E262742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB37E272742B6AE00CC6BD9 /* Debug */,
+				6CB37E282742B6AE00CC6BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB37E292742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB37E2A2742B6AE00CC6BD9 /* Debug */,
+				6CB37E2B2742B6AE00CC6BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB37E2C2742B6AE00CC6BD9 /* Build configuration list for PBXNativeTarget "MMCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB37E2D2742B6AE00CC6BD9 /* Debug */,
+				6CB37E2E2742B6AE00CC6BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6CB37E052742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CB37E062742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodel */,
+			);
+			currentVersion = 6CB37E062742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodel */;
+			path = MMCodingChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6CB37DF12742B6AC00CC6BD9 /* Project object */;
+}
