@@ -7,23 +7,19 @@
 
 import Foundation
 
+
 struct CountryModel: Decodable {
     let name: CountryName
-    let nativeName: NativeName
-    let tld: [String]
-    let cca2: String
-    let ccn3: String
-    let cca3: String
-    let cioc: String
-    let independent: Bool
+    var nativeName: NativeName?
+    var independent: Bool?
     let status: String
     let unMember: Bool
-    let currencies: Currencies
-    let capital: [String]
     let region: String
-    let subregion: String
-    let languages: Languages
+    var subregion: String?
     let population: Double
+    var maps: Maps?
+    var tld: [String]?
+    var capital: [String]?
 }
 
 struct CountryName: Decodable {
@@ -38,19 +34,6 @@ struct NativeName: Decodable {
     }
 }
 
-struct Currencies: Decodable {
-    struct Currency: Decodable {
-        let name: String
-        let symbol: String
-    }
-    
-    let currencies: [String: Currency]
-    
-    private enum CodingKeys: String, CodingKey {
-        case currencies = "currencies"
-    }
-}
-
 struct Languages: Decodable {
     let languages: [String: String]
     private enum CodingKeys: String, CodingKey {
@@ -59,5 +42,5 @@ struct Languages: Decodable {
 }
 
 struct Maps: Decodable {
-    let googleMaps: [String: URL]
+    let googleMaps: String
 }

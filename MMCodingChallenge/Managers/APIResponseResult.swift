@@ -8,13 +8,13 @@
 import Alamofire
 
 enum APIResponseResult<T: Decodable> {
-    case success(_ response: T)
+    case success(_ response: T, count: Int?)
     case error(_ error: APIResponseError)
 }
 
 extension APIResponseResult {
-    init(data: T) {
-        self = .success(data)
+    init(data: T, count: Int? = 0) {
+        self = .success(data, count: count)
     }
     
     init(error: Error) {

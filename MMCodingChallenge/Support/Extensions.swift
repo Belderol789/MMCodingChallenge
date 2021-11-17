@@ -31,6 +31,7 @@ extension UIViewController {
         alertController.addAction(defaultAction) // add the default last so it shows up in the bottom of the alert
         self.present(alertController, animated: false, completion: nil)
     }
+    
 }
 
 // MARK: - Reusability

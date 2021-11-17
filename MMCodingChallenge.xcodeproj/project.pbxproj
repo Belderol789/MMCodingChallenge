@@ -24,6 +24,10 @@
 		6CB37E4027441C9600CC6BD9 /* APIResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E3F27441C9600CC6BD9 /* APIResponseResult.swift */; };
 		6CB37E4227441CA100CC6BD9 /* APIPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E4127441CA100CC6BD9 /* APIPaths.swift */; };
 		6CB37E4427441CAC00CC6BD9 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E4327441CAC00CC6BD9 /* APIRequestManager.swift */; };
+		6CB37E462744ADC800CC6BD9 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E452744ADC800CC6BD9 /* CountryListViewModel.swift */; };
+		6CB37E4A2744B0F000CC6BD9 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E482744B0F000CC6BD9 /* CountryTableViewCell.swift */; };
+		6CB37E4B2744B0F000CC6BD9 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB37E492744B0F000CC6BD9 /* CountryTableViewCell.xib */; };
+		6CB37E4D2744DA0400CC6BD9 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB37E4C2744DA0300CC6BD9 /* MapsVC.swift */; };
 		C41A55AC1FD300BB31F231DE /* libPods-MMCodingChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17098542CEA5782A1DD39A1B /* libPods-MMCodingChallengeUITests.a */; };
 		DE10E8E62EDDEDA04FF29B96 /* libPods-MMCodingChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E677071D0D33B8DB87ABAD /* libPods-MMCodingChallengeTests.a */; };
 		E706B0544AB35CCBE21F335F /* libPods-MMCodingChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A899B9102D09F819311DDFA /* libPods-MMCodingChallenge.a */; };
@@ -73,6 +77,10 @@
 		6CB37E3F27441C9600CC6BD9 /* APIResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseResult.swift; sourceTree = "<group>"; };
 		6CB37E4127441CA100CC6BD9 /* APIPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPaths.swift; sourceTree = "<group>"; };
 		6CB37E4327441CAC00CC6BD9 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		6CB37E452744ADC800CC6BD9 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		6CB37E482744B0F000CC6BD9 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		6CB37E492744B0F000CC6BD9 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		6CB37E4C2744DA0300CC6BD9 /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
 		A97C420B1B602174B5526750 /* Pods-MMCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MMCodingChallenge/Pods-MMCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		D5E677071D0D33B8DB87ABAD /* libPods-MMCodingChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMCodingChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E308F55F38D0CD003C912317 /* Pods-MMCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMCodingChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-MMCodingChallengeUITests/Pods-MMCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +194,8 @@
 			children = (
 				6CB37E3127433DDC00CC6BD9 /* Storyboards */,
 				6CB37E3227433DE400CC6BD9 /* LaunchScreen */,
+				6CB37E482744B0F000CC6BD9 /* CountryTableViewCell.swift */,
+				6CB37E492744B0F000CC6BD9 /* CountryTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,7 +219,8 @@
 		6CB37E3327433DFA00CC6BD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6CB37E002742B6AC00CC6BD9 /* CountryListVC.swift */,
+				6CB37E472744ADDA00CC6BD9 /* CountryList */,
+				6CB37E4E2744DA0800CC6BD9 /* Maps */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +251,23 @@
 				6CB37E3D27441C3800CC6BD9 /* Constants.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		6CB37E472744ADDA00CC6BD9 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E002742B6AC00CC6BD9 /* CountryListVC.swift */,
+				6CB37E452744ADC800CC6BD9 /* CountryListViewModel.swift */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		6CB37E4E2744DA0800CC6BD9 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				6CB37E4C2744DA0300CC6BD9 /* MapsVC.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 		8EDEED6F54887E8088F7EC43 /* Pods */ = {
@@ -362,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB37E4B2744B0F000CC6BD9 /* CountryTableViewCell.xib in Resources */,
 				6CB37E0C2742B6AE00CC6BD9 /* LaunchScreen.storyboard in Resources */,
 				6CB37E092742B6AE00CC6BD9 /* Assets.xcassets in Resources */,
 				6CB37E042742B6AC00CC6BD9 /* Main.storyboard in Resources */,
@@ -466,7 +495,10 @@
 				6CB37DFF2742B6AC00CC6BD9 /* SceneDelegate.swift in Sources */,
 				6CB37E4427441CAC00CC6BD9 /* APIRequestManager.swift in Sources */,
 				6CB37E072742B6AC00CC6BD9 /* MMCodingChallenge.xcdatamodeld in Sources */,
+				6CB37E4A2744B0F000CC6BD9 /* CountryTableViewCell.swift in Sources */,
+				6CB37E4D2744DA0400CC6BD9 /* MapsVC.swift in Sources */,
 				6CB37E4227441CA100CC6BD9 /* APIPaths.swift in Sources */,
+				6CB37E462744ADC800CC6BD9 /* CountryListViewModel.swift in Sources */,
 				6CB37E3B27440E1000CC6BD9 /* Extensions.swift in Sources */,
 				6CB37E3E27441C3800CC6BD9 /* Constants.swift in Sources */,
 			);

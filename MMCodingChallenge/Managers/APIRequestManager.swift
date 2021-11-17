@@ -25,8 +25,22 @@ class APIRequestManager: NSObject {
                         encoding: JSONEncoding.default,
                         headers: nil,
                         interceptor: nil,
-                        requestModifier: nil).responseJSON { responseType in
-            print("ResponseType \(responseType)")
+                        requestModifier: nil)
+            .responseData { response in
+                guard let json = response.data else { return }
+
+            do{
+                let decoder = JSONDecoder()
+                //using the array to put values
+                let response = try decoder.decode([T].self, from: json)
+                
+                for T in response {
+                    completionHandler(.success(T, count: response.count))
+                }
+            }catch let err{
+                completionHandler(.error(APIResponseError(title: "Ooops", message: err.localizedDescription)))
+                print(err)
+            }
         }
     }
 }
