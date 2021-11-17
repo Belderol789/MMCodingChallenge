@@ -14,7 +14,8 @@ class CountryListVC: UIViewController {
     var viewModel: CountryListViewModel = CountryListViewModel()
     
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var searchField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
@@ -43,8 +44,19 @@ class CountryListVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
+        
+        searchField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
+    @objc
+    func textFieldDidChange(_ textField: UITextField) {
+        if let text = textField.text, !text.isEmpty {
+            viewModel.filterCountries(text: textField.text)
+        } else {
+            viewModel.filterCountries(text: nil)
+        }
+        tableView.reloadData()
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -75,5 +87,4 @@ extension CountryListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
-    
 }
