@@ -17,26 +17,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-u8-hab">
-                                <rect key="frame" x="16" y="44" width="382" height="818"/>
+                                <rect key="frame" x="16" y="86" width="382" height="776"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-68-AaO">
+                                <rect key="frame" x="16" y="44" width="382" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ROg-QC-5Xd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Q5a-68-AaO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4bl-f5-epu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q5a-68-AaO" secondAttribute="trailing" constant="16" id="Dh2-l8-DVr"/>
+                            <constraint firstItem="Vry-u8-hab" firstAttribute="top" secondItem="Q5a-68-AaO" secondAttribute="bottom" constant="8" id="Hjd-Wz-MEW"/>
+                            <constraint firstItem="Q5a-68-AaO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JIY-el-6Iv"/>
                             <constraint firstItem="Vry-u8-hab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZOH-v1-z3I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vry-u8-hab" secondAttribute="bottom" id="eOa-yf-eDS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vry-u8-hab" secondAttribute="trailing" constant="16" id="iq0-Vx-yZv"/>
-                            <constraint firstItem="Vry-u8-hab" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tgr-x8-zwM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchField" destination="Q5a-68-AaO" id="nMl-bp-ZWQ"/>
                         <outlet property="tableView" destination="Vry-u8-hab" id="RoC-rF-8fF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="98"/>
+            <point key="canvasLocation" x="128.98550724637681" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
